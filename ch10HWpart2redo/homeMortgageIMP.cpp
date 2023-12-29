@@ -2,7 +2,12 @@
 #include<iostream>
 using namespace std;
 
+// To reference the member functions from the headerfile
+// use the scope resolution operator :: (doulbe colon)
+// This define the 'set loan amount' function.
 void homeMortgage::setLoanAmount(double loan) {
+	// If the loan amount is greater than or equal to 0
+	// Checking for valid input
 	if (loan >= 0) {
 		loanAmount = loan;
 	}
